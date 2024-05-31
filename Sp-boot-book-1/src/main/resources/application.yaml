@@ -1,0 +1,17 @@
+spring:
+  application.name: BookProject
+
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+
+#?? view
+  mvc.static-path-pattern: classpath:/static/**
+  web.resources.static-locations: classpath:/static/
+
+  config:
+    import: classpath:db_config.yaml
+
+#?? ?? ??
+logging.level.com.callor.book: debug
